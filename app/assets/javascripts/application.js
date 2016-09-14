@@ -20,9 +20,17 @@
 //= require_tree ./routers
 //= require_tree .
 
+<<<<<<< HEAD
 // Create the full CRUD system ( scaffold or otherwise)
   //Create all directories
   //Start adding models , collections , views ,routers
   //Change my load order
   // Underscore , backbone , all models , all collections , all views , all routers
   // Your first CRUD - related Backbone model
+=======
+var App = App || {}
+
+$(function() {
+  Backbone.history.start({ pushState: true });
+});
+>>>>>>> acf7988076e882acbc165f395015f53a3b515441
