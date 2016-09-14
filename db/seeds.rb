@@ -28,10 +28,10 @@ p1 = Plane.create :name => "747", :row => 10 , :column => 4
 p2 = Plane.create :name => "343", :row => 8 , :column => 2
 
 Flight.destroy_all
-f1 = Flight.create :flight_number => "TH333", :origin => "SYD" , :destination => "BRS", :date => "24/4/2014"
-f2 = Flight.create :flight_number => "MH212", :origin => "USA" , :destination => "CHA", :date => "26/6/2014"
-f1.plane_id = p1.id
-f2.plane_id = p2.id
+f1 = Flight.create :flight_number => "TH333", :origin => "SYD" , :destination => "BRS", :date => "24/4/2014" ,:plane_id => p1.id
+f2 = Flight.create :flight_number => "MH212", :origin => "USA" , :destination => "CHA", :date => "26/6/2014"  ,:plane_id => p1.id
+# f1.plane_id = p1.id
+# f2.plane_id = p2.id
 
 
 # Booking.destroy_all
