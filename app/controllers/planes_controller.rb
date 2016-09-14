@@ -1,28 +1,20 @@
 class PlanesController < ApplicationController
   before_action :set_plane, only: [:show, :edit, :update, :destroy]
 
-  # GET /planes
-  # GET /planes.json
   def index
     @planes = Plane.all
   end
 
-  # GET /planes/1
-  # GET /planes/1.json
   def show
   end
 
-  # GET /planes/new
   def new
     @plane = Plane.new
   end
 
-  # GET /planes/1/edit
   def edit
   end
 
-  # POST /planes
-  # POST /planes.json
   def create
     @plane = Plane.new(plane_params)
 
@@ -36,9 +28,7 @@ class PlanesController < ApplicationController
       end
     end
   end
-
-  # PATCH/PUT /planes/1
-  # PATCH/PUT /planes/1.json
+π
   def update
     respond_to do |format|
       if @plane.update(plane_params)

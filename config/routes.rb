@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   # root url
   root "session#login"
 
@@ -8,6 +9,9 @@ Rails.application.routes.draw do
   delete '/logout' => 'session#destroy' , :as =>"logout"
 
   #others
+=======
+
+>>>>>>> acf7988076e882acbc165f395015f53a3b515441
   resources :bookings
   resources :planes
   resources :flights
