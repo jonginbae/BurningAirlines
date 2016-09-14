@@ -14,3 +14,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+var App = App || {}
+
+$(function() {
+  Backbone.history.start({ pushState: true });
+});
