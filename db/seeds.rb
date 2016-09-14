@@ -1,31 +1,15 @@
 
-# create_table "users", force: :cascade do |t|
-#   t.string   "name"
-#   t.string   "email"
-#   t.string   "password"
-#   t.string   "authority"
-#   t.datetime "created_at", null: false
-#   t.datetime "updated_at", null: false
-# end
-
 User.destroy_all
 u1 = User.create :name=> "Tom", :email=> "tom@ga.co", :password=> "chicken", :authority => "admin"
 u2 = User.create :name=> "John", :email=> "john@ga.co", :password=> "chicken", :authority => "admin"
 u3 = User.create :name=> "Priya", :email=> "priya@ga.co", :password=> "chicken", :authority => "admin"
-# create_table "flights", force: :cascade do |t|
-#   t.string   "flight_number"
-#   t.date     "date"
-#   t.string   "origin"
-#   t.string   "destination"
-#   t.integer  "plane_id"
-#   t.datetime "created_at",    null: false
-#   t.datetime "updated_at",    null: false
-# end
+
+p User.all
 
 Plane.destroy_all
-
 p1 = Plane.create :name => "747", :row => 10 , :column => 4
 p2 = Plane.create :name => "343", :row => 8 , :column => 2
+p Plane.all
 
 Flight.destroy_all
 f1 = Flight.create :flight_number => "TH333", :origin => "SYD" , :destination => "BRS", :date => "24/4/2014" ,:plane_id => p1.id

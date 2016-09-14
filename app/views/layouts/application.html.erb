@@ -3,11 +3,20 @@
   <head>
     <title>Airline</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+  <nav>
+    <%= link_to 'Home', flights_path %>
+    <%= link_to 'Plane', planes_path %>
+    <%= link_to 'User', users_path %>
+    <%= link_to 'Booking', bookings_path %>
+    <% if @current_user.present? %>
+      <br>
+      <%= link_to("User : #{@current_user.name}" , logout_path() , :method => :delete ) %>
+    <% end %>
+  </nav>
   <body>
     <%= yield %>
   </body>
