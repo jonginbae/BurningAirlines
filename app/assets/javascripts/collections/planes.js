@@ -1,7 +1,7 @@
-var App = App || {};
+var app = app || {};
 
 app.Planes = Backbone.Collection.extend({
   url: '/planes',
-  model: App.Plane
+  model: app.Plane
 
 });

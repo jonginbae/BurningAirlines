@@ -1,4 +1,4 @@
-var App = App || {};
+var app = app || {};
 
 app.FLightView = Backbone.View.extend({
 

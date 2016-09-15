@@ -1,4 +1,4 @@
-var App = App || {};
+var app = app || {};
 
 app.PlanesView = Backbone.View.extend ({
 
@@ -6,4 +6,4 @@ app.PlanesView = Backbone.View.extend ({
 
 //EVENTS
 //CREATE table here for SEATS?
-//Append SEATS to page here
+//append SEATS to page here

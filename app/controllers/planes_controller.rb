@@ -28,7 +28,6 @@ class PlanesController < ApplicationController
       end
     end
   end
-π
   def update
     respond_to do |format|
       if @plane.update(plane_params)
