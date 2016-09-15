@@ -19,23 +19,38 @@
       </tr>
   </tbody>
 </table>
-<script type="html/template" id="appViewTemplate"></script>
-<table>
-  <thead>
-    <tr>
-      <th>col11</th>
-      <th>col12</th>
-      <th>col13</th>
-    </tr>
-    <tr>
-      <th>col21</th>
-      <th>col22</th>
-      <th>col23</th>
-    </tr>
-    <tr>
-      <th>col31</th>
-      <th>col32</th>
-      <th>col33</th>
-    </tr>
-  </thead>
 <%= link_to 'Back', flights_path %>
+<div class="app">
+  <script type="html/template" id="selectSeat">
+<table>
+  <tr>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>2</td>
+  </tr>
+</table>
+  </script>
+  <script type="html/template" id="resultBooking">
+  <hr>
+  <table>
+    <thead>
+      <tr>
+        <th>User</th>
+        <th>Flight Number</th>
+        <th>Row</th>
+        <th>Column</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+  //   <tbody>
+  //     <% @flight.bookings.each do |booking| %>
+  //       <th><%= booking.user.name %></p>
+  //         <th><%= booking.flight.flight_number %></p>
+  //       <th><%= booking.row %></p>
+  //       <th><%= booking.column %></p>
+  //     <% end %>
+  //   </tbody>
+  // </table>
+  </script>
+</div>

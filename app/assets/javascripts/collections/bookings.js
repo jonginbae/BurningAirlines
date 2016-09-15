@@ -1,7 +1,7 @@
-var app = app || {};
 
+var app = app || {} ;
 app.Bookings = Backbone.Collection.extend({
-  url: '/flights',
+  url: "/flights" ,
   model: app.Booking
 
 });

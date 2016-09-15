@@ -1,4 +1,12 @@
 var app = app || {};
 
-app.AppRouter = Backbone.Router.extend({
+
+app.Router = Backbone.Router.extend({
+  routes: {
+    '': 'initialize'
+  },
+  initialize:  function(){
+    var appView = new app.AppView();
+    appView.render();
+  }
 });

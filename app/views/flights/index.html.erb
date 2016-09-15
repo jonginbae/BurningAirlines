@@ -17,7 +17,8 @@
   <tbody>
     <% @flights.each do |flight| %>
 
-        <td><%= link_to flight.flight_number, flight %></td>
+        <!-- <td><%= link_to flight.flight_number, flight %></td> -->
+        <button><%= flight.flight_number %></button>
         <td><%= flight.date %></td>
         <td><%= flight.origin %></td>
         <td><%= flight.destination %></td>
